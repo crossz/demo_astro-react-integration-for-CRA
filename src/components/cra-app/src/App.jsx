@@ -27,7 +27,7 @@ function App() {
           <Route element={<ProtectedRoute />}>
             <Route path='/page-2a/user-profile' element={<ProfileScreen />} />
           </Route>
-          <Route path='*' element={<Navigate to='/page-2ab' replace />} />
+          {/* <Route path='*' element={<Navigate to='/page-2ab' replace />} /> */}
         </Routes>
       </main>
       </Provider>
