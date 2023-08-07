@@ -21,6 +21,9 @@ const Header = () => {
 
   return (
     <header>
+      
+      <h1> CRA App </h1>
+      
       <div className='header-status'>
         <span>
           {isFetching

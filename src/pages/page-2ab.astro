@@ -3,16 +3,31 @@
 import { index2 as App2a } from '../components/cra-app/src/index2.jsx'
 import { index2 as App2b } from '../components/todo-react/src/index2.jsx'
 ---
-<html>
-  <body>
+
+
+
+<!-- <html>
+  <body> -->
     <h1>Use React components directly in Astro!</h1>
-    <App2a client:only />
-    <App2b client:load />
+    <div class="ai">
+      <App2a client:only />
+    </div>
+    <App2b client:visible />
     
     <!--   
       <Route path='*' element={<Navigate to='/page-2ab' replace />} />
       this line in App.jsx of cra-app determins the 'correct' landing url for this page, if doesn't match, will redirect back to /.
     -->
 
-  </body>
-</html>
+  <!-- </body>
+</html> -->
+
+
+
+<!-- <style is:global> -->
+  <style>
+    .ai :global(> astro-island > header > h1)  {
+      color: red;
+    }
+
+  </style>
